@@ -8,6 +8,10 @@ jobs: #define a bunch of jobs
     steps: # define a bunch of steps
       - name: Print greeting # define step Print greeting
         run: echo "Hello World!"
+      - name: Print Multiline
+        run: |
+          echo "first line"
+          echo "second line"
       - name: Print goodbye
         run: echo "Done - bye!";
     
